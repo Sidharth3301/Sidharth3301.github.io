@@ -15,17 +15,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
-<<<<<<< HEAD
       uses: actions/checkout@v2
 
-=======
-      uses: actions/checkout@v3
->>>>>>> 7f558cb22e053971832c0312759457428435d8ac
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: '3.0.2'
-<<<<<<< HEAD
 
     - name: Enable bundler cache
       uses: actions/cache@v2
@@ -40,11 +35,6 @@ jobs:
         gem install bundler -v 2.5.10
         bundle config set --local path 'vendor/bundle'
         bundle install --jobs 4 --retry 3
-=======
-        bundler-cache: true
-    - name: Install deps
-      run: |
->>>>>>> 7f558cb22e053971832c0312759457428435d8ac
         npm install -g mermaid.cli
 
     - name: Update uri gem
@@ -62,7 +52,6 @@ jobs:
           echo "::set-output name=SRC_BRANCH::${GITHUB_REF#refs/heads/}"
         fi
         echo "::set-output name=DEPLOY_BRANCH::gh-pages"
-<<<<<<< HEAD
 
     - name: Deploy website
       run: |
@@ -71,9 +60,3 @@ jobs:
         yes | bin/deploy --verbose ${{ steps.setup.outputs.NO_PUSH }} \
                     --src ${{ steps.setup.outputs.SRC_BRANCH }} \
                     --deploy ${{ steps.setup.outputs.DEPLOY_BRANCH }}
-=======
-    - name: Deploy website 
-      run:  yes | bash bin/deploy --verbose ${{ steps.setup.outputs.NO_PUSH }}
-                    --src ${{ steps.setup.outputs.SRC_BRANCH }} 
-                    --deploy ${{ steps.setup.outputs.DEPLOY_BRANCH }} 
->>>>>>> 7f558cb22e053971832c0312759457428435d8ac
