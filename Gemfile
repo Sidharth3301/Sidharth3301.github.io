@@ -18,4 +18,5 @@ group :jekyll_plugins do
     gem 'htmlcompressor'
     gem 'htmlbeautifier'
     gem 'jekyll-scholar'
+    gem 'uri', '0.13.0'
 end
