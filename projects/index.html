@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sidharth Nair | blog</title>
+    <title>Sidharth Nair | projects</title>
     <meta name="author" content="Sidharth S. Nair" />
     <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 " />
@@ -35,7 +35,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-    <link rel="canonical" href="https://sidharth3301.github.io/blog/">
+    <link rel="canonical" href="https://sidharth3301.github.io/projects/">
 
     <!-- Dark Mode -->
     <script src="/assets/js/theme.js"></script>
@@ -69,21 +69,21 @@
               </li>
               
               <!-- Blog -->
-              <li class="nav-item active">
-                <a class="nav-link" href="/blog/">blog<span class="sr-only">(current)</span></a>
+              <li class="nav-item ">
+                <a class="nav-link" href="/blog/">blog</a>
               </li>
 
               <!-- Other pages -->
-              <li class="nav-item ">
-                <a class="nav-link" href="/projects/">projects</a>
+              <li class="nav-item active">
+                <a class="nav-link" href="/projects/">projects<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="/publications/">publications</a>
               </li>
 
               <!-- Toogle theme mode -->
-              <div class = "toggle-container">
-                <a id = "light-toggle">
+              <div class="toggle-container">
+                <a id="light-toggle">
                   <i class="fas fa-moon"></i>
                   <i class="fas fa-sun"></i>
                 </a>
@@ -96,27 +96,57 @@
 
     <!-- Content -->
     <div class="container mt-5">
-      <div class="post">
+      <!-- page.html -->
+        <div class="post">
 
-  <div class="header-bar">
-    <h1>Blog</h1>
-    <h2></h2>
+          <header class="post-header">
+            <h1 class="post-title">projects</h1>
+            <p class="post-description"></p>
+          </header>
+
+          <article>
+            <!-- pages/projects.md -->
+<div class="projects">
+<!-- Display projects without categories --><!-- Generate cards for each project -->
+  <div class="grid">
+    <!-- _includes/projects.html -->
+    <div class="grid-item">
+      <a href="/projects/1_project/">
+        <div class="card hoverable">
+<figure>
+
+  <picture>
+    <source media="(max-width: 480px)" srcset="/assets/img/rc_low-480.webp"></source>
+    <source media="(max-width: 800px)" srcset="/assets/img/rc_low-800.webp"></source>
+    <source media="(max-width: 1400px)" srcset="/assets/img/rc_low-1400.webp"></source>
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/rc_low.jpeg" alt="">
+  </picture>
+
+</figure>
+
+          <div class="card-body">
+            <h2 class="card-title text-lowercase">Ray tracing based Renderer</h2>
+            <p class="card-text"></p>
+            <div class="row ml-1 mr-1 p-0">
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
   </div>
-
-
-  <ul class="post-list">
-    
-  </ul>
-
-  
-
 </div>
+
+          </article>
+
+        </div>
+
     </div>
 
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        &copy; Copyright 2024 Sidharth S. Nair. Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+        © Copyright 2024 Sidharth S. Nair. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme.
 
       </div>
     </footer>

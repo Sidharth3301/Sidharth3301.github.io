@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sidharth Nair | blog</title>
+    <title>Sidharth Nair | publications</title>
     <meta name="author" content="Sidharth S. Nair" />
     <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 " />
@@ -35,7 +35,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-    <link rel="canonical" href="https://sidharth3301.github.io/blog/">
+    <link rel="canonical" href="https://sidharth3301.github.io/publications/">
 
     <!-- Dark Mode -->
     <script src="/assets/js/theme.js"></script>
@@ -69,21 +69,21 @@
               </li>
               
               <!-- Blog -->
-              <li class="nav-item active">
-                <a class="nav-link" href="/blog/">blog<span class="sr-only">(current)</span></a>
+              <li class="nav-item ">
+                <a class="nav-link" href="/blog/">blog</a>
               </li>
 
               <!-- Other pages -->
               <li class="nav-item ">
                 <a class="nav-link" href="/projects/">projects</a>
               </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="/publications/">publications</a>
+              <li class="nav-item active">
+                <a class="nav-link" href="/publications/">publications<span class="sr-only">(current)</span></a>
               </li>
 
               <!-- Toogle theme mode -->
-              <div class = "toggle-container">
-                <a id = "light-toggle">
+              <div class="toggle-container">
+                <a id="light-toggle">
                   <i class="fas fa-moon"></i>
                   <i class="fas fa-sun"></i>
                 </a>
@@ -96,27 +96,80 @@
 
     <!-- Content -->
     <div class="container mt-5">
-      <div class="post">
+      <!-- page.html -->
+        <div class="post">
 
-  <div class="header-bar">
-    <h1>Blog</h1>
-    <h2></h2>
-  </div>
+          <header class="post-header">
+            <h1 class="post-title">publications</h1>
+            <p class="post-description"></p>
+          </header>
 
+          <article>
+            <!-- _pages/publications.md -->
+<div class="publications">
+  <h2 class="year">2023</h2>
+  <ol class="bibliography"><li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">EUSIPCO</abbr></div>
 
-  <ul class="post-list">
-    
-  </ul>
+        <!-- Entry bib key -->
+        <div id="sankar2023" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">Learning to Precode for Integrated Sensing and Communication Systems</div>
+          <!-- Author -->
+          <div class="author">
+          
 
-  
+          RS Prasobh Sankar, <em>Sidharth Nair</em>, Siddhant Doshi, and
+            <span class="more-authors" title="click to view 1 more author" onclick="
+                  var element = $(this);
+                  element.attr('title', '');
+                  var more_authors_text = element.text() == '1 more author' ? 'Sundeep Prabhakar Chepuri' : '1 more author';
+                  var cursorPosition = 0;
+                  var textAdder = setInterval(function(){
+                    element.text(more_authors_text.substring(0, cursorPosition + 1));
+                    if (++cursorPosition == more_authors_text.length){
+                      clearInterval(textAdder);
+                    }
+                }, '10');
+                ">1 more author</span>
+</div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            2023
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="http://arxiv.org/abs/2303.06381" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">arXiv</a>
+          
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>In this paper, we present an unsupervised learning neural model to design transmit precoders for integrated sensing and communication (ISAC) systems to maximize the worst-case target illumination power while ensuring a minimum signal-to-interference-plus-noise ratio (SINR) for all the users. The problem of learning transmit precoders from uplink pilots and echoes can be viewed as a parameterized function estimation problem and we propose to learn this function using a neural network model. To learn the neural network parameters, we develop a novel loss function based on the first-order optimality conditions to incorporate the SINR and power constraints. Through numerical simulations, we demonstrate that the proposed method outperforms traditional optimization-based methods in presence of channel estimation errors while incurring lesser computational complexity and generalizing well across different channel conditions that were not shown during training."</p>
+          </div>
+        </div>
+      </div>
+</li></ol>
+
 
 </div>
+
+          </article>
+
+        </div>
+
     </div>
 
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        &copy; Copyright 2024 Sidharth S. Nair. Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+        © Copyright 2024 Sidharth S. Nair. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme.
 
       </div>
     </footer>
